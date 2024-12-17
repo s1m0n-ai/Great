@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Great - This is great</title>
+</head>
+<body>
+    <div id="firstPage">
+        <video id="videoBack" autoplay="" loop="" muted="" playsinline="" src="media/Fine%20Animation.mp4" type="video/mp4">
+        </video>
+        <header class="header">
+                    <div class="navbar">
+                        <a href="#firstPage" class="menuItem">Home</a>
+                        <a href="#story" class="menuItem">Story</a>
+                        <img id="logo" src="images/Logo.png" alt="">
+                        <a href="#faqSection" class="menuItem">FAQ</a>
+                        <a href="#footer" class="menuItem">Links</a>
+                    </div>
+        </header>
+    </div>
+    <div id="story">
+        <h1>STORY</h1>
+        <div class="storyline">
+            <p>In a world where the internet culture reigns supreme, there existed a dog who had become a symbol of universal acceptance—acceptance of both chaos and serenity. This dog, known as "This Is Fine Dog" or simply "Great," found himself in situations that ranged from the most disastrous to the idyllic, always with the same nonchalant response: "This is great." </p>
+            <div id="eyes"><video autoplay="" loop="" muted="" playsinline="" src="media/trueanim.mp4" type="video/mp4">
+            </video></div>
+        </div>
+    </div>
+    <div id="tokenomics">
+        <h1>TOKENOMICS</h1>
+        <div class="tokens">
+            <div class="token">
+                <img src="images/Supply.png" alt="">
+                <h2 class="tokenTitle">SUPPLY</h2>
+                <h3 class="tokenValue" id="counter" data-target="1000000000">1B</h3>
+            </div>
+            <div class="token">
+                <img src="images/Contract.png" alt="">
+                <h2 class="tokenTitle">CONTRACT</h2>
+                <h3 class="tokenValue">REVOKED</h3>
+            </div>
+            <div class="token">
+                <img src="images/Burned.png" alt="">
+                <h2 class="tokenTitle">BURN</h2>
+                <h3 class="tokenValue" id="counter2" data-target="1000000000">1000000000</h3>
+            </div>
+        </div>
+    </div>
+    <div class="roadmap">   
+        <h1>ROADMAP</h1>
+        <div id="stages">
+            <div class="stage">
+                <h2 class="stageNumber">1</h2>
+                <p class="stageDesc">
+                    </p><p class="descItem">• DexScreener &amp; DexTools ads</p>
+                    <p class="descItem">• CoinGecko/Coinmarketcap listings</p>
+                    <p class="descItem">• 1000+ holders</p>
+                <p></p>
+            </div>
+            <div class="stage">
+                <h2 class="stageNumber">2</h2>
+                <p class="stageDesc">
+                    </p><p class="descItem">• Get $GREAT trending on DexScreener </p>
+                    <p class="descItem">• Get $GREAT trending on Twitter</p>
+                    <p class="descItem">• Twitter spaces</p>
+                <p></p>
+            </div>
+            <div class="stage">
+                <h2 class="stageNumber">3</h2>
+                <p class="stageDesc"> 
+                    </p><p class="descItem">• T1 Exchange listings</p>
+                    <p class="descItem">• 10 000+ holders</p>
+                    <p class="descItem">• Website Revision</p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="faq">
+        <h1>FAQ</h1>
+        <div id="faqSection">
+            <div class="fineFaq">
+                <img id="fineImg" src="images/Character%20Fine%201.png" alt="">
+                <img id="bubble" src="images/ANIMATED.png" alt="">
+            </div>
+            <div class="faqList">
+                <div class="listItem">
+                    <button class="titleItem" data-target="pop1,bubble">Marketing plan</button>
+                    <div class="fine" id="pop1">It will be great</div>
+                </div>
+                <div class="listItem">
+                    <button class="titleItem" data-target="pop2,bubble">When listing on exchanges?</button>
+                    <div class="fine" id="pop2">Don't worry, tier 1 exchanges will be great.</div>
+                </div>
+                <div class="listItem">
+                    <button class="titleItem" data-target="pop3,bubble">Dex trending?</button>
+                    <div class="fine" id="pop3">It will be great.</div>
+                </div>
+                <div class="listItem">
+                    <button class="titleItem" data-target="pop4,bubble">Is this legit?</button>
+                    <div class="fine" id="pop4">Yes, Its GREAT</div>
+                </div>
+                <div class="listItem">
+                    <button class="titleItem" data-target="pop5,bubble">Is this great?</button>
+                    <div class="fine" id="pop5">Yes, This is great of course.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer">
+        <h1>LINKS &amp; ADDRESS</h1>
+        <div class="socials">
+            <a href="https://x.com/FineEther/" class="socialLinks" id="twitter">TWITTER</a>
+            <a href="https://t.me/fineethereum" class="socialLinks" id="tele">TELEGRAM</a>
+            <a href="https://dexscreener.com/ethereum/0x1634e10C9155BE623B5a52d6CA01C7A904D89b0a" class="socialLinks" id="dex">DEXSCREENER</a>
+            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xb0af93c18c163099e8b332a6b2421734db03185f?t=1728316071367" class="socialLinks" id="tools">DEXTOOLS</a>
+        </div>
+        <div class="quote">!!!!!!</div>
+        <img id="footerFine" src="images/Fine.png" alt="">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const counterElement = document.getElementById('counter');
+            const targetNumber = parseInt(counterElement.getAttribute('data-target'), 10);
+
+            if (isNaN(targetNumber)) {
+                console.error("Invalid target number.");
+                return;
+            }
+
+            let currentNumber = 0;
+            const duration = 50000; // Duration of the animation in milliseconds
+            const increment = targetNumber / (duration / 100);
+
+            function updateCounter() {
+                currentNumber += increment;
+                if (currentNumber >= targetNumber) {
+                    counterElement.innerText = targetNumber;
+                } else {
+                    counterElement.innerText = Math.floor(currentNumber);
+                    requestAnimationFrame(updateCounter);
+                }
+            }
+
+            requestAnimationFrame(updateCounter);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const counterElement = document.getElementById('counter2');
+            const targetNumber = parseInt(counterElement.getAttribute('data-target'), 10);
+
+            if (isNaN(targetNumber)) {
+                console.error("Invalid target number.");
+                return;
+            }
+
+            let currentNumber = 0;
+            const duration = 50000; // Duration of the animation in milliseconds
+            const increment = targetNumber / (duration / 100);
+
+            function updateCounter() {
+                currentNumber += increment;
+                if (currentNumber >= targetNumber) {
+                    counterElement.innerText = targetNumber;
+                } else {
+                    counterElement.innerText = Math.floor(currentNumber);
+                    requestAnimationFrame(updateCounter);
+                }
+            }
+
+            requestAnimationFrame(updateCounter);
+        });
+
+        document.querySelectorAll('.titleItem').forEach(button => {
+            button.addEventListener('click', function() {
+                const targetIds = this.getAttribute('data-target').split(',');
+
+                targetIds.forEach(targetId => {
+                const contentDiv = document.getElementById(targetId.trim());
+                if (contentDiv) {
+                     contentDiv.style.display = contentDiv.style.display === 'block' ? 'none' : 'block';
+                    }
+                });
+        });
+        });
+
+    </script>
+
+</body></html>

@@ -1,0 +1,621 @@
+
+@font-face {
+    font-family: 'Japan';
+    src: url(fonts/To\ Japan.otf);
+}
+
+html{
+    scroll-behavior: smooth;
+    width: 100vw;
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    cursor: url('../bone.cur') 16 16, auto;
+}
+
+#firstPage{
+    height: 100vh;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0px;
+    width: 100vw;
+    position: relative;
+}
+
+#logo{
+    width:144px;
+    height:73px;
+}
+
+#videoBack{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    margin: 0;
+    left: 0;
+    top:0;
+    object-fit: fill;
+
+}
+
+#navigation{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menuItem{
+    text-decoration: none;
+    font-family: 'Japan';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.25px;
+    text-align: left;
+    color: #FFFFFF;
+    text-shadow: 
+                1px 1px 0 #000, 
+                -1px -1px 0 #000, 
+                1px -1px 0 #000, 
+                -1px 1px 0 #000;
+}
+
+.menuItem:hover{
+    color: #DA8322;
+    cursor: url('../bone.cur') 16 16, auto;;
+}
+
+.menuItem:active{
+    color: #DA8322;
+}
+
+#story{
+    background-color: #e18c2e;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.storyline{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5%;
+}
+
+#story h1{
+    font-family: 'Japan';
+    color: #FFF1E2;
+    font-size: 64px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-shadow: 
+    2px 2px 0 #000, 
+    -2px -2px 0 #000, 
+    2px -2px 0 #000, 
+    -2px 2px 0 #000;
+}
+
+.storyline p{
+    width: 50vw;
+    font-family: 'Japan';
+    font-size: 20px;
+    color: #FFF1E2;
+    text-shadow: 1px solid #000;
+    margin-left: 5%;
+    text-align: left;
+    text-shadow: 
+    1px 1px 0 #000, 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000;
+}
+
+#eyes {
+    width: 50vw;
+    position: relative;
+}
+
+#left-eye {
+    position: absolute;
+    width: 30%;
+    height: 50%; 
+    background: rgba(255, 255, 255, 1);
+    border-radius: 80%;
+    pointer-events: none; 
+    overflow: hidden;
+    right: 5%;
+    bottom: 5%;
+    z-index: 2;
+}
+
+#right-eye {
+    position: absolute;
+    width: 30%; /* Adjust based on your eye's size */
+    height: 50%; /* Adjust based on your eye's size */
+    background: rgba(255, 255, 255, 1);
+    border-radius: 80%;
+    pointer-events: none; /* Ensure eyes don't interfere with cursor */
+    overflow: hidden;
+    margin-left: 5%;
+    z-index: 2;
+}
+
+.pupil {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: black;
+    border-radius: 50%;
+    transition: transform 0.1s ease;
+}
+
+#eyes img{
+    width: 400px;
+    height: 328px;
+}
+
+#tokenomics{
+    background-color: #B1AD42;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.tokens{
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.token{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tokenTitle{
+    font-family: 'Japan';
+    color:#E4E073;
+    font-size: 36px;
+    text-shadow: 
+    1px 1px 0 #000, 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000;
+}
+
+.tokenValue{
+    font-family: 'Japan';
+    font-size: 24px;
+    color:#FBF9C1;
+    text-shadow: 
+    1px 1px 0 #000, 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000;
+}
+
+.token img{
+    width:284px;
+    height: 260px;
+    margin-top: 55px;
+}
+
+#supplyImg {
+    width: 284px;
+    height: 271px;
+    transform: scale(1.29);
+    margin-top: 0px;
+}
+
+#tokenomics h1{
+    font-family: 'Japan';
+    font-size: 64px;
+    color: #E4E073;
+    text-shadow: 
+    2px 2px 0 #000, 
+    -2px -2px 0 #000, 
+    2px -2px 0 #000, 
+    -2px 2px 0 #000;
+}
+
+.roadmap{
+    width: 100vw;
+    background-color: #413F16;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.stage{
+    width: 30vw;
+}
+
+.roadmap h1{
+    font-size: 46px;
+    color: #E4E073;
+    font-family: 'Japan';
+    margin-top: 2%;
+    text-shadow: 
+    2px 2px 0 #000, 
+    -2px -2px 0 #000, 
+    2px -2px 0 #000, 
+    -2px 2px 0 #000;
+}
+
+#stages{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stageNumber{
+    color:#FFF739;
+    font-size: 96px;
+    font-family: 'Japan';
+    text-shadow: 0px 7px 0px #302F1A;
+}
+
+.stageDesc{
+    color:#FBF9C1;
+    font-size: 15px;
+    font-family: 'Japan';
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 
+    1px 1px 0 #000, 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000;
+}
+
+.descItem{
+    color:#FBF9C1;
+    font-size: 15px;
+    font-family: 'Japan';
+    text-shadow: 
+    1px 1px 0 #000, 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000;
+}
+
+.faq{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C0834D;
+    width: 100vw;
+    padding-bottom: 5%;
+}
+
+.faq h1{
+    font-family: 'Japan';
+    font-size: 64px;
+    color: #FFCE98;
+    text-shadow: 
+    2px 2px 0 #000, 
+    -2px -2px 0 #000, 
+    2px -2px 0 #000, 
+    -2px 2px 0 #000;
+}
+
+.fineFaq{
+    position: relative;
+}
+
+#faqSection{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+#fineImg{
+    width:511px;
+    height:688px;
+	overflow: hidden;
+}
+
+#bubble{
+    position: absolute;
+    top: -5%;
+    right: -4%;
+    display: none;
+	overflow: hidden;
+}
+
+.faqList{
+    margin-top: 5%;
+}
+
+
+.titleItem{
+    background-color: #FFCFA5;
+    padding: 15px 15px;
+    width: 100%;
+    font-size: 24px;
+    font-family: 'Japan';
+    border-radius: 28px;
+    box-shadow: 0px 6px 0px #523B22;
+    border: 2px solid #000000;
+}
+
+.listItem{
+    margin-bottom: 4%;
+}
+
+
+.fine{
+    display: none;
+    color:#312820;
+    font-family: 'Japan';
+    font-size: 20px;
+    background-color: #DAA97E;
+    border: 2px solid #000000;
+    box-shadow: 0px 6px 0px #523B22;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    padding: 20px;
+    margin-top: -3%;
+}
+
+#footer{
+    background-color: #FF9621;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 5%;
+}
+
+#footer h1{
+    font-family: 'Japan';
+    font-size: 48px;
+    color: #FFCE98;
+    margin-top: 2%;
+    text-shadow: 
+    2px 2px 0 #000, 
+    -2px -2px 0 #000, 
+    2px -2px 0 #000, 
+    -2px 2px 0 #000;
+}
+
+#pop2{
+    font-size: 15px;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+
+.socialLinks{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Japan';
+    padding: 10px 30px;
+    background: #FF9621;
+    border: 1px solid #000000;
+    box-shadow: 0px 5px 0px #755430;
+    border-radius: 20px;
+    color: #FFFFFF;
+    position: relative;
+    text-shadow: 
+                1px 1px 0 #000, 
+                -1px -1px 0 #000, 
+                1px -1px 0 #000, 
+                -1px 1px 0 #000;
+
+}
+
+.socialLinks:hover{
+    background-color: #FFFFFF;
+    color: #FF9621;
+}
+
+.socialLinks::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    width: 50px;
+    height: 50px; 
+    background-image: url('../images/Hat.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.socialLinks:hover::before,
+.socialLinks:active::before {
+    opacity: 1;
+}
+
+.quote{
+    font-size: 20px;
+    font-family: 'Japan';
+    padding: 10px 11%;
+    background: #FF9621;
+    border: 1px solid #000000;
+    box-shadow: 0px 5px 0px #755430;
+    border-radius: 20px;
+    color: #FFFFFF;
+    text-shadow: 
+                1px 1px 0 #000, 
+                -1px -1px 0 #000, 
+                1px -1px 0 #000, 
+                -1px 1px 0 #000;
+}
+
+#footerFine{
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    width: 164px;
+    height: 221px;
+}
+
+@media (max-width: 800px) {
+
+    .header{
+        padding-left: 0px;
+    }
+    .menuItem{
+        display: none;
+    }
+
+    .storyline{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .storyline p{
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 10%;
+    }
+
+    #eyes{
+        width: 100vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #eyes video{
+        transform: scale(0.7);
+    }
+
+    #tokenomics h1{
+        font-size: 50px;
+        transform: scale(0.85);
+    }
+
+    .tokens{
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tokens img{
+        justify-content: center;
+        text-align: center;
+    }
+
+    #stages{
+        flex-direction: column;
+    }
+
+    .stage{
+        width: 100vw;
+    }
+
+    .stageDesc{
+        width: 100vw;
+    }
+    .titleItem{
+        transform: scale(0.85);
+    }
+
+    .fine{
+        transform: scale(0.85);
+        border-top-left-radius: 28px;
+        border-top-right-radius: 28px;
+    }
+
+    .descItem{
+        transform: scale(0.85);
+    }
+    #faqSection{
+        flex-direction: column;
+    }
+
+    #fineImg{
+        transform: scale(0.65);
+    }
+
+    .socials{
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    #bubble{
+        right: -1%;
+    }
+
+    .fineFaq{
+        width: 100vw;
+        text-align: center;
+        margin-left: -7%;
+    }
+
+    .socialLinks{
+        margin-bottom: 5%;
+    }
+
+    .quote{
+        width: 40vw;
+        margin-bottom: 1%;
+    }
+
+    #footerFine{
+        right:1%;
+    }
+
+    #videoBack{
+        height: 100vh;
+        object-fit: cover;
+    }
+
+}
